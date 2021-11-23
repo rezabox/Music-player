@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="background"></div>
+    <div class="music-player">
+        <audio src="music/01-Hello.mp3" id="audio"></audio>
+        <div class="header">
+          <div class="image">
+              <img src="image/219012440-parsnaz-ir.jpg">
+          </div>
+          <div class="information">
+              <div class="system">windows</div>
+              <div class="song-name">Hello</div>
+              <div class="singers">Adele</div>
+          </div>
+         <div class="clear">
+
+         </div>
+        </div>
+        <div class="player">
+          <div class="time-line">
+              <div class="background"></div>
+              <div class="fill"></div>
+              <div class="fill-btn"></div>
+          </div>
+          <div class="under-time-line">
+              <span id="time-past">0:00</span>
+              <span id="time-left">-0:00</span>
+          </div>
+          <div class="buttons">
+              <button class="btn">
+                  <img src="image/next and back.png" id="back-btn" onclick="back_5()" style="transform: rotateY(180deg);" alt="">
+                </button>
+                <button class="btn">
+                    <img src="image/play icon.png" id="play-pause-btn" alt="" onclick="play_and_pause()">
+                </button>
+                <button class="btn">
+                    <img src="image/next and back.png" id="next-btn" onclick="next_5()" alt="">
+                </button>
+          </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
